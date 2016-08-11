@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pos.vendapos.valueObjects;
+package com.pos.clientevendaws;
 
-import javax.ws.rs.FormParam;
 import javax.xml.bind.annotation.XmlRootElement;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,18 +14,14 @@ import lombok.NoArgsConstructor;
  *
  * @author marcelo
  */
-@XmlRootElement
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Produto {
+@XmlRootElement(name = "produto")
+public class Product {
     
-    @FormParam("id")
     private long id;
-    @FormParam("nome")
     private String nome;
-    @FormParam("valor")
-    private double valor;   
-    
+    private double valor;  
     
 }
