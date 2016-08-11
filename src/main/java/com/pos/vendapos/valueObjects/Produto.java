@@ -7,7 +7,9 @@ package com.pos.vendapos.valueObjects;
 
 import javax.ws.rs.FormParam;
 import javax.xml.bind.annotation.XmlRootElement;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
@@ -15,15 +17,16 @@ import lombok.Data;
  */
 @XmlRootElement
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Produto {
     
     @FormParam("id")
     private long id;
     @FormParam("descricao")
-    private String descricao;
+    private String nome;
     @FormParam("valor")
-    private double valor;
-    
+    private double valor;   
     
     
 }
