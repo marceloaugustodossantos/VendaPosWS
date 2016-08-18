@@ -36,4 +36,13 @@ public class Venda {
     public void remProduto(Produto produto){
         this.produtos.remove(produto);
     }
+//    
+//    public String getlink(Class c, String id){
+//        String url = "url do seu projeto";
+//        return url.concat("/" + c.getSimpleName().toLowerCase()+ "/" + id);
+//    }
+//    
+//    public String getCliente(){
+//        return this.getlink(this.cliente.getClass(),""+this.cliente.getId());
+//    }
 }

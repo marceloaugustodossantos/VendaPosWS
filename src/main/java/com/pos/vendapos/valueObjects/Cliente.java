@@ -22,6 +22,6 @@ import lombok.NoArgsConstructor;
 public class Cliente {
     @FormParam("id")
     private long id;
-    @FormParam("descricao")
-    private String descricao;
+    @FormParam("nome")
+    private String nome;
 }
